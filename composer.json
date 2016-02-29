@@ -41,9 +41,6 @@
         ],
         "post-install-cmd": [
             "php artisan clear-compiled",
-            "php artisan ide-helper:generate",
-            "php artisan ide-helper:models",
-            "php artisan ide-helper:meta",
             "php artisan optimize"
         ],
         "pre-update-cmd": [
