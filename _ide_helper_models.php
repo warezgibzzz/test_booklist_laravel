@@ -8,27 +8,27 @@
  */
 
 
-namespace App\Models{
+namespace App{
 /**
- * App\Models\Book
+ * App\Book
  *
- * @property-read \App\Models\Author $author
+ * @property-read \App\Author $author
  */
 	class Book {}
 }
 
-namespace App\Models{
+namespace App{
 /**
- * App\Models\Author
+ * App\Author
  *
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Book[] $books
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Book[] $books
  */
 	class Author {}
 }
 
-namespace App\Models{
+namespace App{
 /**
- * App\Models\User
+ * App\User
  *
  * @property integer $id
  * @property string $name

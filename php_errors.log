@@ -1,2 +1,0 @@
-[29-Feb-2016 21:53:49 UTC] PHP Warning:  require(/home/gibz/work/php/test/booklist/laravel/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home/gibz/work/php/test/booklist/laravel/bootstrap/autoload.php on line 17
-[29-Feb-2016 21:53:49 UTC] PHP Fatal error:  require(): Failed opening required '/home/gibz/work/php/test/booklist/laravel/bootstrap/../vendor/autoload.php' (include_path='.:/usr/share/php56/pear') in /home/gibz/work/php/test/booklist/laravel/bootstrap/autoload.php on line 17
