@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>BookList Demo - Laravel</title>
 
     <!-- Fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet'
@@ -14,8 +14,9 @@
 
     <!-- Styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ elixir('css/app.css') }}" rel="stylesheet">
+    {{--    <link href="{{ elixir('css/app.css') }}" rel="stylesheet">--}}
 
+    {!! Rapyd::styles() !!}
     <style>
         body {
             font-family: 'Lato';
@@ -42,7 +43,7 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}">
-                Laravel
+                BookList Demo - Laravel
             </a>
         </div>
 
@@ -50,6 +51,10 @@
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
                 <li><a href="{{ url('/') }}">Home</a></li>
+                @if (!Auth::guest())
+                    <li><a href="{{ url('/admin/authors') }}">Authors</a></li>
+                    <li><a href="{{ url('/admin/books') }}">Books</a></li>
+                @endif
             </ul>
 
             <!-- Right Side Of Navbar -->
@@ -80,6 +85,7 @@
         <!-- JavaScripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="{{ elixir('js/app.js') }}"></script>
+{{--<script src="{{ elixir('js/app.js') }}"></script>--}}
+{!! Rapyd::scripts() !!}
 </body>
 </html>

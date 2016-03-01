@@ -12,6 +12,11 @@ namespace App{
 /**
  * App\Book
  *
+ * @property integer $id
+ * @property string $title
+ * @property integer $author_id
+ * @property \Carbon\Carbon $created_at
+ * @property \Carbon\Carbon $updated_at
  * @property-read \App\Author $author
  */
 	class Book {}
@@ -21,6 +26,11 @@ namespace App{
 /**
  * App\Author
  *
+ * @property integer $id
+ * @property string $firstname
+ * @property string $lastname
+ * @property \Carbon\Carbon $created_at
+ * @property \Carbon\Carbon $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Book[] $books
  */
 	class Author {}

@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://localhost:8300'),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Novosibirsk',
 
     /*
     |--------------------------------------------------------------------------
@@ -149,19 +149,20 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
+         * Vendor providers
+         */
+        Dingo\Api\Provider\LaravelServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Zofe\Rapyd\RapydServiceProvider::class,
+        Jlapp\Swaggervel\SwaggervelServiceProvider::class,
+
+        /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
-        /*
-         * Vendor providers
-         */
-        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
-        Zofe\Rapyd\RapydServiceProvider::class,
-        Jlapp\Swaggervel\SwaggervelServiceProvider::class,
     ],
 
     /*
@@ -207,6 +208,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+//        'API' => Dingo\Api\Facade\API::class,
+//        'APIRoute' => Dingo\Api\Facade\Route::class,
 
     ],
 
