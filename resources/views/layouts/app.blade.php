@@ -51,10 +51,6 @@
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
                 <li><a href="{{ url('/') }}">Home</a></li>
-                @if (!Auth::guest())
-                    <li><a href="{{ url('/admin/authors') }}">Authors</a></li>
-                    <li><a href="{{ url('/admin/books') }}">Books</a></li>
-                @endif
             </ul>
 
             <!-- Right Side Of Navbar -->
