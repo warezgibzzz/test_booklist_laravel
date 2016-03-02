@@ -13,8 +13,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-         Commands\KickstartApp::class,
-         Commands\ConfigureApp::class,
+//         Commands\KickstartApp::class,
+//         Commands\ConfigureApp::class,
     ];
 
     /**

@@ -11,7 +11,8 @@
         "doctrine/dbal": "^2.5",
         "zofe/rapyd": "2.2.*",
         "jlapp/swaggervel": "2.0.*@dev",
-        "dingo/api": "1.0.x@dev"
+        "dingo/api": "1.0.x@dev",
+        "serverfireteam/panel": "^1.4"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

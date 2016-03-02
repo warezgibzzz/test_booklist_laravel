@@ -1,17 +1,4 @@
 <?php
-
-
-Route::group(['prefix' => 'admin', 'middleware' => 'web'], function () {
-    Route::auth();
-
-    Route::get('/', 'HomeController@index');
-
-    Route::group(['namespace' => 'Admin'], function () {
-        Route::resource('books', 'BooksController');
-        Route::resource('authors', 'AuthorsController');
-    });
-});
-
 /** @var \Dingo\Api\Routing\Router $api */
 $api = app('Dingo\Api\Routing\Router');
 

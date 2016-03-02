@@ -153,8 +153,8 @@ return [
          */
         Dingo\Api\Provider\LaravelServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
-        Zofe\Rapyd\RapydServiceProvider::class,
         Jlapp\Swaggervel\SwaggervelServiceProvider::class,
+        Serverfireteam\Panel\PanelServiceProvider::class,
 
         /*
          * Application Service Providers...
